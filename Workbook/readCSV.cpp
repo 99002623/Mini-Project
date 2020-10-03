@@ -4,40 +4,23 @@
 
 using namespace std;
 
-//fstream dataset;
+int main()
+{
+string data;
+ifstream dataset;
 
-void create() 
-{ 
-	// file pointer 
-	fstream fout; 
+// Open file
+dataset.open("test.csv");
 
-	// opens an existing csv file or creates a new file. 
-	fout.open("reportcard.csv", ios::out | ios::app); 
+// Read data
+cout << "Reading from the file" << endl; 
+dataset >> data; 
 
-	cout << "Enter the details of 5 students: " << "roll name maths phy chem bio" << endl; 
+// write the data at the screen.
+cout << data << endl;
 
-	int i, roll, phy, chem, math, bio; 
-	string name; 
+//Close file
+dataset.close(); 
 
-	// Read the input 
-	for (i = 0; i < 5; i++) { 
-
-		cin >> roll 
-			>> name 
-			>> math 
-			>> phy 
-			>> chem 
-			>> bio; 
-
-		// Insert the data to file 
-		fout << roll << ", "
-			<< name << ", "
-			<< math << ", "
-			<< phy << ", "
-			<< chem << ", "
-			<< bio 
-			<< "\n"; 
-	} 
-} 
-
-
+ return 0;   
+}
