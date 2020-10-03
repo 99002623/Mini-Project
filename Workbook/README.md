@@ -1,6 +1,8 @@
 # Commands
+clear
 g++ readCSV.cpp -c
 g++ readCSV.cpp -o out
+./out
 
 # File handling
 The fstream library allows us to work with files.
@@ -48,4 +50,5 @@ The fstream library allows us to work with files.
 3. Reading from a File
     You read information from a file into your program using the stream extraction operator (>>) just as you use that operator to input information from the keyboard. 
 
+* [link](https://www.geeksforgeeks.org/csv-file-management-using-c/)
 * [link](https://www.tutorialspoint.com/cplusplus/cpp_files_streams.htm)
