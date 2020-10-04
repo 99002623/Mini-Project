@@ -93,9 +93,9 @@ findMovie
 # Checklist
 
 ## Cpp
-* No.of classes 	
-    - Domain classes
-	- Utility Classes
+* No.of classes 	d
+    - Domain classes 
+	- Utility Classes 
 	
 * Class Relationships	
     - Is-a
@@ -107,7 +107,7 @@ findMovie
 	- Dynamic Binding
 	- Operator Overloading
 	- Templates
-	- File Handling
+	- File Handling   
 	- Namespace
 	- STL Containers
 	- Iterators
