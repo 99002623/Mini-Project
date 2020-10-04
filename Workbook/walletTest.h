@@ -39,8 +39,3 @@ TEST(customerWallet, DebitTest) {
   EXPECT_EQ(500, c1.getWalletbal());
 }
 
-int main(int argc, char **argv)
-{
-    testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
