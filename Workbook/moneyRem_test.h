@@ -45,9 +45,11 @@ EXPECT_EQ(500, w_ptr->getWalletbal());
 
 
 TEST(MoneyRemittance, DebitTest) {
-  MoneyRemittance c1("Mr.Abc","9901063456",1000);
-  c1.debit(500);
-  EXPECT_EQ(1500, c1.getWalletbal());
+customerWallet *w_ptr;
+MoneyRemittance c1("Mr.Abc","9901063456",1000);
+w_ptr = &c1;
+
+w_ptr->debit(500);   // Dynamic binding
+EXPECT_EQ(1500, w_ptr->getWalletbal());
+
 }
-
-
