@@ -41,9 +41,10 @@ double customerWallet:: getWalletbal(){
     return w_balance;
 }
 
+/*
 void customerWallet::display(){
     std::cout << "Customer Name :" + w_custName << std::endl;
     std::cout << "Customer Number :" + w_mobNum << std::endl;
     std::cout << "Wallet Balance available :" << w_balance << std::endl;
-}
+}*/
 

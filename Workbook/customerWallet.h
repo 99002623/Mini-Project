@@ -27,7 +27,7 @@ virtual void debit(double);
 std:: string getCustomerName();
 std:: string getMobileNum();
 double getWalletbal();
-void display();
+//void display();
 
 };   // Class defining end
 

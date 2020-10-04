@@ -17,6 +17,17 @@ TEST(customerWallet, ParametricConstructor) {
   EXPECT_EQ(1000, c1.getWalletbal());
 }
 
+TEST(customerWallet, CreditTest) {
+  customerWallet c1("Mr.Abc","9901063456",1000);
+  c1.credit(500);
+  EXPECT_EQ(1500, c1.getWalletbal());
+}
+
+TEST(customerWallet, DebitTest) {
+  customerWallet c1("Mr.Abc","9901063456",1000);
+  c1.debit(500);
+  EXPECT_EQ(500, c1.getWalletbal());
+}
 
 int main(int argc, char **argv)
 {
