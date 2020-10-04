@@ -21,12 +21,6 @@ TEST(MoneyRemittance, ParametricConstructor1) {
   EXPECT_EQ(0, c1.getWalletbal());
 }
 
-/*
-TEST(MoneyRemittance, CreditTest) {
-  MoneyRemittance c1("Mr.Abc","9901063456",1000);
-  c1.credit(500);
-  EXPECT_EQ(500, c1.getWalletbal());
-}*/
 
 TEST(MoneyRemittance, CreditTest) {  // Account Credit Test
 
