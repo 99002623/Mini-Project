@@ -15,15 +15,12 @@ public:
 
 MoneyRemittance();
 
-// Name,Mob,id,Ac,bank,ifsc
-MoneyRemittance(std::string,std::string,std::string,int,std::string,std::string);
+// Name,Mob,id,Ac,bank,ifsc,bal
+MoneyRemittance(std::string,std::string,std::string,int,std::string,std::string,double);
 
 // Virtual funcions
 void credit(double);   // Account Credit or Wallet Debit
 void debit(double);     // Wallet Credit or Account Debit
-
-//setters
-void updateBalance(double);
 
 // getters
 int getAccNumber();

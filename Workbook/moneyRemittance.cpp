@@ -2,8 +2,9 @@
 
 MoneyRemittance::MoneyRemittance():customerWallet(),m_accNum(0),m_bank(""),m_ifscCode(""){}
 
-MoneyRemittance::MoneyRemittance(std::string name,std::string mobNum,std::string id,int accNum,std::string bank,std::string ifsc):
-customerWallet(name,mobNum,id,0),m_accNum(accNum),m_bank(bank),m_ifscCode(ifsc){}
+MoneyRemittance::MoneyRemittance(std::string name,std::string mobNum,std::string id,int accNum,std::string bank,std::string ifsc,double acBal):
+customerWallet(name,mobNum,id,0),m_accNum(accNum),m_bank(bank),m_ifscCode(ifsc),
+m_accBal(acBal){}
 
 void MoneyRemittance ::credit(double amt){
 m_accBal += amt;
@@ -14,11 +15,6 @@ void MoneyRemittance ::debit(double amt){
 m_accBal -= amt;
 w_balance += amt ;
 }
-
-void MoneyRemittance::updateBalance(double amt){
-m_accBal = amt;
-}
-
 
 double MoneyRemittance::getAccBalance(){
     return m_accBal;
