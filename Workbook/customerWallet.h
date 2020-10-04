@@ -12,12 +12,18 @@ std::string w_custName;
 std::string w_mobNum;
 double w_balance;
 
+
+
 public:
 
 // Constructer - Default and Parameterized Constructer
 customerWallet();
 customerWallet(std::string,std::string,double);
 customerWallet(std::string,std::string,std::string,double);
+
+// Operations
+void addBalance(double);
+void withDrawal(double);
 
 //virtual functions
 
