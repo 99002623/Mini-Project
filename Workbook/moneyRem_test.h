@@ -25,3 +25,16 @@ TEST(MoneyRemittance, ParametricConstructor1) {
   EXPECT_EQ(9, c1.getCustomerID().length());
   EXPECT_EQ(1000, c1.getWalletbal());
 }
+
+
+TEST(MoneyRemittance, CreditTest) {
+  MoneyRemittance c1("Mr.Abc","9901063456",1000);
+  c1.credit(500);
+  EXPECT_EQ(500, c1.getWalletbal());
+}
+
+TEST(MoneyRemittance, DebitTest) {
+  MoneyRemittance c1("Mr.Abc","9901063456",1000);
+  c1.debit(500);
+  EXPECT_EQ(1500, c1.getWalletbal());
+}

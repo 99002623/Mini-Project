@@ -1,4 +1,4 @@
-#include "walletTest.h"
+#include "moneyRem_test.h"
 
 int main(int argc, char **argv)
 {
