@@ -1,3 +1,6 @@
+#ifndef _mrTest_h
+#define _mrTest_h
+
 #include "moneyRemittance.h"
 #include <gtest/gtest.h>
 
@@ -42,3 +45,6 @@ w_ptr->debit(500);   // Dynamic binding
 EXPECT_EQ(500, w_ptr->getWalletbal());
 
 }
+
+
+#endif
