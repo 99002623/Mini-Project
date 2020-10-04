@@ -23,7 +23,7 @@ customerWallet(std::string,std::string,std::string,double);
 
 // Operations
 void loadWallet(double);
-void withDrawal(double);
+void drawWallet(double);
 
 //virtual functions
 

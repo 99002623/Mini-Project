@@ -27,7 +27,7 @@ void customerWallet::loadWallet(double amt){
     w_balance += amt ;
 }
 
-void customerWallet::withDrawal(double amt){
+void customerWallet::drawWallet(double amt){
      w_balance -= amt ;
 }
 // Credit and debit are the virtual functions which is updated by the services from the wallet provider
