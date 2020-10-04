@@ -15,3 +15,8 @@ g++ customerWallet.o moneyRemittance.o test.o -lgtest -lgtest_main -lpthread -o 
 g++ customerWallet.cpp moneyRemittance.cpp transaction.cpp test.cpp -c 
 g++ customerWallet.o moneyRemittance.o transaction.o test.o -lgtest -lgtest_main -lpthread -o out
 ./out 
+
+g++ customerWallet.cpp moneyRemittance.cpp readCSV.cpp -c
+g++ readCSV.cpp -c
+g++ customerWallet.o moneyRemittance.o readCSV.o -o a
+./a

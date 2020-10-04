@@ -10,11 +10,23 @@
 
 using namespace std;
 
-vector<string> parseData(string line);
+vector<string> parseData(string line){
+
+vector<string> data ;
+string word;
+stringstream s(line);  // bracking line
+data.clear();   //Clear data_elements
+    while (getline(s, word, ',')) { 
+    data.push_back(word);
+    } 
+return data;
+} // end of parse data 
+
 
 list<MoneyRemittance> importDataset(string fileName)
 {
 list<MoneyRemittance> mrCust;
+
 ifstream dataset;   // Read mode
 dataset.open(fileName);   // Open file
 string line;
@@ -28,17 +40,6 @@ dataset.close(); //Close file
 return mrCust;
 }
 
-vector<string> parseData(string line){
-
-vector<string> data ;
-string word;
-stringstream s(line);  // bracking line
-data.clear();   //Clear data_elements
-    while (getline(s, word, ',')) { 
-    data.push_back(word);
-    } 
-return data;
-} // end of parse data 
 
 /*
 
