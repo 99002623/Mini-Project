@@ -1,4 +1,6 @@
-#include "moneyRem_test.h"
+//#include "moneyRem_test.h"
+#include "transTest.h"
+
 
 int main(int argc, char **argv)
 {
