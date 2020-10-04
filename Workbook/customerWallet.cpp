@@ -22,7 +22,7 @@ w_mobNum(mobNum),
 w_custID(id),
 w_balance(bal)
 {}
-
+/*
 // Virtual function
 void customerWallet:: credit(double amt)
 {
@@ -33,7 +33,7 @@ w_balance += amt ;
 void customerWallet:: debit(double amt)
 {
 w_balance -= amt ;
-}
+}*/
 
 
 //getters

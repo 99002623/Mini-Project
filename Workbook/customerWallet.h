@@ -21,8 +21,8 @@ customerWallet(std::string,std::string,std::string,double);
 
 //virtual functions
 
-virtual void credit(double);           //recharge or billPay
-virtual void debit(double);
+virtual void credit(double)=0;           //recharge or billPay
+virtual void debit(double)=0;
 
 
 //Getters
