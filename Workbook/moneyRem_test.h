@@ -39,6 +39,20 @@ EXPECT_EQ(5500, c1.getAccBalance());
 }
 
 
+TEST(MoneyRemittance, CreditTest1) {  // Account Credit Test
+
+MoneyRemittance c1("Mr.Abc","9901063456","989Add225",100010001,"SBI","SBIN00041152",5000);
+customerWallet *w_ptr = &c1;
+MoneyRemittance *c_ptr = dynamic_cast<MoneyRemittance*>(w_ptr);  // pointer down casting
+
+c_ptr->loadWallet(1000);
+c_ptr->credit(500);
+EXPECT_EQ(500, c_ptr->getWalletbal());
+EXPECT_EQ(5500, c_ptr->getAccBalance());
+
+}
+
+
 TEST(MoneyRemittance, DebitTest) {  // Account Credit Test
 
 MoneyRemittance c1("Mr.Abc","9901063456","989Add225",100010001,"SBI","SBIN00041152",5000);
@@ -50,5 +64,16 @@ EXPECT_EQ(4500, c1.getAccBalance());
 
 }
 
+TEST(MoneyRemittance, DebitTest1) {  // Account Credit Test
+
+MoneyRemittance c1("Mr.Abc","9901063456","989Add225",100010001,"SBI","SBIN00041152",5000);
+customerWallet *w_ptr = &c1;
+MoneyRemittance *c_ptr = dynamic_cast<MoneyRemittance*>(w_ptr);  // pointer down casting
+
+c_ptr->debit(500);
+EXPECT_EQ(500, c_ptr->getWalletbal());
+EXPECT_EQ(5500, c_ptr->getAccBalance());
+
+}
 
 #endif
