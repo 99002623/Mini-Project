@@ -6,17 +6,22 @@ MoneyRemittance::MoneyRemittance(std::string name,std::string mobNum,std::string
 customerWallet(name,mobNum,id,0),m_accNum(accNum),m_bank(bank),m_ifscCode(ifsc){}
 
 void MoneyRemittance ::credit(double amt){
-// Credit the balance to Bank accout
+m_accBal += amt;
 w_balance -= amt ;
 }
 
 void MoneyRemittance ::debit(double amt){
-// Credit the balance to Bank accout
+m_accBal -= amt;
 w_balance += amt ;
 }
 
-double MoneyRemittance::getAcBal(){
-    return w_balance;
+void MoneyRemittance::updateBalance(double amt){
+m_accBal = amt;
+}
+
+
+double MoneyRemittance::getAccBalance(){
+    return m_accBal;
 }
 
 int MoneyRemittance::getAccNumber(){

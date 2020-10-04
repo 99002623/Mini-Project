@@ -8,6 +8,7 @@ class MoneyRemittance : public customerWallet
 int m_accNum;
 std::string m_bank;
 std::string m_ifscCode;
+double m_accBal = 0;
 
     
 public:
@@ -21,12 +22,14 @@ MoneyRemittance(std::string,std::string,std::string,int,std::string,std::string)
 void credit(double);   // Account Credit or Wallet Debit
 void debit(double);     // Wallet Credit or Account Debit
 
+//setters
+void updateBalance(double);
+
 // getters
 int getAccNumber();
 std::string getBankName();
 std::string getIfscCode();
-
-double getAcBal();
+double getAccBalance();
 
 
 };   // Money Remitance end
