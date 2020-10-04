@@ -22,6 +22,9 @@ w_mobNum(mobNum),
 w_custID(id),
 w_balance(bal)
 {}
+
+
+// Credit and debit are the virtual functions which is updated by the services from the wallet provider
 /*
 // Virtual function
 void customerWallet:: credit(double amt)
