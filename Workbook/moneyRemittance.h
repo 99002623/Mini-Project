@@ -5,18 +5,27 @@
 
 class MoneyRemittance : public customerWallet
 {
+int m_accNum;
+std::string m_bank;
+std::string m_ifscCode;
+
     
 public:
 
 MoneyRemittance();
-MoneyRemittance(std::string,std::string,double);
-MoneyRemittance(std::string,std::string,std::string,double);
+
+// Name,Mob,id,Ac,bank,ifsc
+MoneyRemittance(std::string,std::string,std::string,int,std::string,std::string);
 
 // Virtual funcions
 void credit(double);   // Account Credit or Wallet Debit
 void debit(double);     // Wallet Credit or Account Debit
 
 // getters
+int getAccNumber();
+std::string getBankName();
+std::string getIfscCode();
+
 double getAcBal();
 
 
