@@ -1,5 +1,8 @@
 
 
+# Pending
+* Git Actions
+* UML Diagrams
 
 
 # Problem Statement
