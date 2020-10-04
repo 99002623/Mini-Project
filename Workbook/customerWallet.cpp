@@ -5,13 +5,21 @@
 customerWallet::customerWallet():
 w_custName(""),
 w_mobNum(""),
+w_custID(""),
 w_balance(0)
 {}
-
 
 customerWallet::customerWallet(std::string name,std::string mobNum,double bal):
 w_custName(name),
 w_mobNum(mobNum),
+w_custID(""),
+w_balance(bal)
+{}
+
+customerWallet :: customerWallet(std::string name,std::string mobNum,std::string id,double bal):
+w_custName(name),
+w_mobNum(mobNum),
+w_custID(id),
 w_balance(bal)
 {}
 
@@ -35,6 +43,10 @@ std:: string customerWallet::  getCustomerName(){
 
 std:: string customerWallet:: getMobileNum(){
     return w_mobNum;
+}
+
+std:: string customerWallet:: getCustomerID(){
+    return w_custID;
 }
 
 double customerWallet:: getWalletbal(){
