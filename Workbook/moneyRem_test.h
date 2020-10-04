@@ -72,7 +72,7 @@ MoneyRemittance *c_ptr = dynamic_cast<MoneyRemittance*>(w_ptr);  // pointer down
 
 c_ptr->debit(500);
 EXPECT_EQ(500, c_ptr->getWalletbal());
-EXPECT_EQ(5500, c_ptr->getAccBalance());
+EXPECT_EQ(4500, c_ptr->getAccBalance());
 
 }
 
