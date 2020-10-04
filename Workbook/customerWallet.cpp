@@ -23,7 +23,7 @@ w_custID(id),
 w_balance(bal)
 {}
 
-void customerWallet::addBalance(double amt){
+void customerWallet::loadWallet(double amt){
     w_balance += amt ;
 }
 
