@@ -16,11 +16,13 @@ bool trFlag = false;
         if(number == iter->getMobileNum())  // Customer found
         {
             iter->credit(amt);
+            r_accBal = iter->getAccBalance();
+            r_wBal = iter -> getWalletbal();
             trFlag = true;
+            break;
         }
         
     }
-  
     return trFlag;
 
 }   // function end
@@ -35,6 +37,8 @@ bool trFlag = false;
         if(number == iter->getMobileNum())  // Customer found
         {
             iter->debit(amt);
+            r_accBal = iter->getAccBalance();
+            r_wBal = iter -> getWalletbal();
             trFlag = true;
         }
         
@@ -44,7 +48,7 @@ bool trFlag = false;
     
 }
 
-double Transaction::updatedBalance(std::string num){
+/*double Transaction::updatedBalance(std::string num){
 std::list<MoneyRemittance> :: iterator iter;
 double t_bal;
 
@@ -59,4 +63,4 @@ double t_bal;
     }
 return t_bal;
 
-}
+}*/

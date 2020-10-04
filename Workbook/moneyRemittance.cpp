@@ -8,6 +8,7 @@ m_accBal(acBal){}
 
 void MoneyRemittance ::credit(double amt){
 m_accBal += amt;
+loadWallet(amt);
 w_balance -= amt ;
 }
 
