@@ -23,7 +23,13 @@ w_custID(id),
 w_balance(bal)
 {}
 
+void customerWallet::addBalance(double amt){
+    w_balance += amt ;
+}
 
+void customerWallet::withDrawal(double amt){
+     w_balance -= amt ;
+}
 // Credit and debit are the virtual functions which is updated by the services from the wallet provider
 /*
 // Virtual function
