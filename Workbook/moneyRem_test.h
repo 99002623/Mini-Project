@@ -14,7 +14,7 @@ TEST(MoneyRemittance, DefaultConstructor) {
 }
 
 TEST(MoneyRemittance, ParametricConstructor1) {
-  MoneyRemittance c1("Mr.Abc","9901063456","989Add225",100010001,"SBI","SBIN00041152");
+  MoneyRemittance c1("Mr.Abc","9901063456","989Add225",100010001,"SBI","SBIN00041152",5000);
   EXPECT_EQ(6, c1.getCustomerName().length());
   EXPECT_EQ(10, c1.getMobileNum().length());
   EXPECT_EQ(9, c1.getCustomerID().length());
@@ -22,27 +22,31 @@ TEST(MoneyRemittance, ParametricConstructor1) {
   EXPECT_EQ("SBI",c1.getBankName());
   EXPECT_EQ("SBIN00041152",c1.getIfscCode());
   EXPECT_EQ(0, c1.getWalletbal());
+  EXPECT_EQ(5000, c1.getAccBalance());
 }
 
 
 TEST(MoneyRemittance, CreditTest) {  // Account Credit Test
 
-MoneyRemittance c1("Mr.Abc","9901063456","989Add225",100010001,"SBI","SBIN00041152");
+MoneyRemittance c1("Mr.Abc","9901063456","989Add225",100010001,"SBI","SBIN00041152",5000);
 customerWallet *w_ptr = &c1;
+
 w_ptr->loadWallet(1000);  //Load Wallet
 w_ptr->credit(500);   // Dynamic binding
 EXPECT_EQ(500, w_ptr->getWalletbal());
+EXPECT_EQ(5500, c1.getAccBalance());
 
 }
 
 
 TEST(MoneyRemittance, DebitTest) {  // Account Credit Test
 
-MoneyRemittance c1("Mr.Abc","9901063456","989Add225",100010001,"SBI","SBIN00041152");
+MoneyRemittance c1("Mr.Abc","9901063456","989Add225",100010001,"SBI","SBIN00041152",5000);
 customerWallet *w_ptr = &c1;
 //w_ptr->loadWallet(1000);  //Load Wallet
 w_ptr->debit(500);   // Dynamic binding
 EXPECT_EQ(500, w_ptr->getWalletbal());
+EXPECT_EQ(4500, c1.getAccBalance());
 
 }
 
