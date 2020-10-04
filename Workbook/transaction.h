@@ -17,7 +17,7 @@ void addCustomer(std::string,std::string,std::string,std::string,std::string,std
 bool sendMoney(std::string,double);    // Customer Number and Amount
 bool withdrawMoney(std::string,double);
 
-double getupdatedBalance(std::string);
+double updatedBalance(std::string);
 //double walle
 };
 
