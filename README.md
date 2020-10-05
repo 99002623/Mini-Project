@@ -1,57 +1,32 @@
+# Tasks
+* C++ Source code
+    * Operator Overload
+    * Templates
+    * Code quality check
+    * Git Configurations
+        - Actions setup
+        - Workflow Setup
+        - Integration setup
+        - unit testing
+        - Code Quality
 
+* Linux Develop
+    * Makefiles
+        - Dynamic Lib
+        - static lib
+        - without lib
+    
+    * IPC - simophore
 
-# Pending
-* Git Actions
-* UML Diagrams
+* Documentation 
+    * UML Diagrams
 
+# Description
+## Topic
+    Wallet based Money Remittance 
 
-# Problem Statement
+## Problem Statement
 
-Title : "Recommendation search engine for content streaming on Netflix"  
-
-Netflix is the world's leading subscription-based streaming entertainment service that allows their members to watch TV shows and movies without commercials on an internet-connected device.
-
-Before watching something on Netflix, users will always be curious about its insights such as Genre,country of origin,Creators,Artists,ratings,critics and soon to visualize best shows that are available. A good solution would be a creative kernel.Hence this Project is to create a recommendation search engine based on text/description similarity techniques.This engine use a mix of content-based and collaborative filtering models to recommend tv shows and movies.
-
-## Functions
-
-* What to watch on Netflix ?
-    - Find similar movies / tv shows using text similarity techniques 
-* How to find the best rated Movies in Netflix(Best Movies)
-    - The mission of this task to the best rated movies in netfilx.
-* Show me the Ratings
-    - Which shows are the best?
-
-## Design
-Content Recommnendation :
-
-content.h
-* Data members :
-    - type
-    - title 
-    - director
-    - cast
-    - Genre
-    - duration
-    - release year
-    - country
-    - description
-
-
-
-* Operations :
-    - Constructor
-    - getters
-
-movie m1(titile,director,cast,country,year,duration,genre,description)
-
-list searchByName(string "jnsdfkjsfnd")
-list searchByDirector
-list searchByCast
-list searcgByYear
-list searchByGenre
-getMoviedetails(movie obj)
-findMovie
 
 # Procedure 
 1. Requirement Phase
