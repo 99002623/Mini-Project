@@ -4,6 +4,7 @@
     * Templates
     * Code quality check
     * Git Configurations
+        - project folder
         - Actions setup
         - Workflow Setup
         - Integration setup
