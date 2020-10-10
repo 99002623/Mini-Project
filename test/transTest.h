@@ -31,7 +31,7 @@ bool t_flag = t1.sendMoney("9900112207",1000);
   EXPECT_EQ(0,t1.r_wBal);
 }
 
-/*TEST(Transaction, withdrawMoney) {
+TEST(Transaction, withdrawMoney) {
 
 Transaction t1;
 
@@ -43,7 +43,7 @@ bool t_flag = t1.withdrawMoney("9900112205",500);
   EXPECT_EQ(4500,t1.r_accBal);
   EXPECT_EQ(500,t1.r_wBal);
 
-}*/
+}
 
 
 

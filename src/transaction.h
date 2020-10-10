@@ -17,8 +17,8 @@ std::list <MoneyRemittance> l_mrCust; //= importDataset("bankDatabase.csv");
 
 public:
 
-double r_accBal;
-double r_wBal;
+double r_accBal = 0;
+double r_wBal = 0;
 
 
 void addCustomer(std::string,std::string,std::string,std::string,std::string,std::string,double);
