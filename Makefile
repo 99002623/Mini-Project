@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/Documents/Mini-Project/build
+CMAKE_SOURCE_DIR = /home/user/Documents/Mini-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/Documents/Mini-Project/build
+CMAKE_BINARY_DIR = /home/user/Documents/Mini-Project
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Documents/Mini-Project/build/CMakeFiles /home/user/Documents/Mini-Project/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Documents/Mini-Project/CMakeFiles /home/user/Documents/Mini-Project/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Documents/Mini-Project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Documents/Mini-Project/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ out/fast:
 	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/build
 .PHONY : out/fast
 
-home/user/Documents/Mini-Project/test/test.o: home/user/Documents/Mini-Project/test/test.cpp.o
+test/test.o: test/test.cpp.o
 
-.PHONY : home/user/Documents/Mini-Project/test/test.o
+.PHONY : test/test.o
 
 # target to build an object file
-home/user/Documents/Mini-Project/test/test.cpp.o:
-	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/home/user/Documents/Mini-Project/test/test.cpp.o
-.PHONY : home/user/Documents/Mini-Project/test/test.cpp.o
+test/test.cpp.o:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/test/test.cpp.o
+.PHONY : test/test.cpp.o
 
-home/user/Documents/Mini-Project/test/test.i: home/user/Documents/Mini-Project/test/test.cpp.i
+test/test.i: test/test.cpp.i
 
-.PHONY : home/user/Documents/Mini-Project/test/test.i
+.PHONY : test/test.i
 
 # target to preprocess a source file
-home/user/Documents/Mini-Project/test/test.cpp.i:
-	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/home/user/Documents/Mini-Project/test/test.cpp.i
-.PHONY : home/user/Documents/Mini-Project/test/test.cpp.i
+test/test.cpp.i:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/test/test.cpp.i
+.PHONY : test/test.cpp.i
 
-home/user/Documents/Mini-Project/test/test.s: home/user/Documents/Mini-Project/test/test.cpp.s
+test/test.s: test/test.cpp.s
 
-.PHONY : home/user/Documents/Mini-Project/test/test.s
+.PHONY : test/test.s
 
 # target to generate assembly for a file
-home/user/Documents/Mini-Project/test/test.cpp.s:
-	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/home/user/Documents/Mini-Project/test/test.cpp.s
-.PHONY : home/user/Documents/Mini-Project/test/test.cpp.s
+test/test.cpp.s:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/test/test.cpp.s
+.PHONY : test/test.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... out"
-	@echo "... home/user/Documents/Mini-Project/test/test.o"
-	@echo "... home/user/Documents/Mini-Project/test/test.i"
-	@echo "... home/user/Documents/Mini-Project/test/test.s"
+	@echo "... test/test.o"
+	@echo "... test/test.i"
+	@echo "... test/test.s"
 .PHONY : help
 
 
