@@ -2,12 +2,16 @@
 #include "moneyRem_test.h"
 #include "transTest.h"
 
-/*
-//Dependancies
+//#define _cmake_
+#define _commands_
+
+#ifdef _cmake_          //Dependancies
+
 #include "../src/customerWallet.cpp"
 #include "../src/moneyRemittance.cpp"
 #include "../src/transaction.cpp"
-*/
+
+#endif
 
 
 int main(int argc, char **argv)
