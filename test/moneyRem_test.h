@@ -2,11 +2,6 @@
 #define _mrTest_h
 
 #include "../src/moneyRemittance.h"
-
-//Dependancies
-#include "../src/customerWallet.cpp"
-#include "../src/moneyRemittance.cpp"
-
 #include <gtest/gtest.h>
 
 

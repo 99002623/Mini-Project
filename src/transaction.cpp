@@ -6,36 +6,32 @@ void Transaction::addCustomer(std::string name,std::string mobNum,std::string id
     l_mrCust.push_back(MoneyRemittance(name,mobNum,id,accNum,bank,ifsc,acBal));
 }
 
-MoneyRemittance Transaction::parseData(std::string line) {        //Line input
-
-    std::string word;
-    std::stringstream s(line);
-    std::vector<std::string> lineData;
-
-    lineData.clear();
-    while (getline(s, word, ',')) {
-    lineData.push_back(word);
-    }
-    double iniBal = std::atof(lineData[6].c_str());
-    MoneyRemittance d1(lineData[0],lineData[1],lineData[2],lineData[3],lineData[4],lineData[5],iniBal);
-
-    return d1;
+void Transaction::addCustomer(vector<string> data){
+    double iniBal = std::atof(data[6].c_str());
+    l_mrCust.push_back(MoneyRemittance(data[0],data[1],data[2],data[3],data[4],data[5],iniBal));
 }
 
 
-void Transaction::importDataset(std::string fileName){
+void Transaction::importDataset(string fileName){
 
-//std::list<MoneyRemittance> mrCust;
-std::string line;
-std::ifstream file;  // define file handler
+ifstream file;  // define file handler in readmode
+string line,dataField;
 
 file.open(fileName);
-    while(std::getline(file,line)){
-    MoneyRemittance pData = parseData(line);
-    l_mrCust.push_back(pData);
+
+getline(file,line);  //Read 1st line
+vector<string> lineData;
+
+    while(getline(file,line)){     //Read from 2nd Line
+        stringstream s(line);  // Converting datatype
+        while (getline(s, dataField,',')) {     //extract dataFiled into vector
+        lineData.push_back(dataField);
+        }
+        addCustomer(lineData);
+        lineData.clear();
     }
 
-//return mrCust;
+file.close();
 
 }//Import end
 

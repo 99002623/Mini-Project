@@ -27,6 +27,9 @@ g++ readCSV.cpp -c
 g++ customerWallet.o moneyRemittance.o readCSV.o -o a
 ./a
 
+
+alias compileTest='g++ -c src/*.c* && g++ -c test/test.cpp && mkdir -p obj && mv *.o obj'
+
 # Tasks
 * C++ Source code
     * Operator Overload

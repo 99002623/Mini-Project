@@ -1,3 +1,0 @@
-/home/user/Documents/Mini-Project/CMakeFiles/rebuild_cache.dir
-/home/user/Documents/Mini-Project/CMakeFiles/edit_cache.dir
-/home/user/Documents/Mini-Project/CMakeFiles/out.dir
