@@ -31,6 +31,8 @@ void importDataset(string fileName);
 bool sendMoney(string,double);    // Customer Number and Amount
 bool withdrawMoney(string,double);
 
+void showCustomers();
+
 //double updatedBalance(std::string);
 //double walle
 };

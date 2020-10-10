@@ -93,3 +93,17 @@ double t_bal;
 return t_bal;
 
 }*/
+
+
+
+void Transaction::showCustomers(){
+
+list<MoneyRemittance>::iterator iter;
+
+cout << "Accout List" << endl ;
+    for(iter = l_mrCust.begin();iter != l_mrCust.end();iter++)
+    {
+        cout << iter->getCustomerName() << endl;
+    }
+
+}
