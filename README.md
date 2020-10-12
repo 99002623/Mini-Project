@@ -1,8 +1,15 @@
+
+![C++ cmake Unit test](https://github.com/99002623/Test/workflows/C++%20cmake%20Unit%20test/badge.svg)
+
 # New Workflow Commads
 cd build
 cmake .
 make
 ./out
+
+
+  alias genMake='cd build && cmake . && cd ..'
+  alias build='cd build && make && ./out && cd ..'
 
 # Commands
 clear
@@ -26,9 +33,6 @@ g++ customerWallet.cpp moneyRemittance.cpp readCSV.cpp -c
 g++ readCSV.cpp -c
 g++ customerWallet.o moneyRemittance.o readCSV.o -o a
 ./a
-
-
-alias compileTest='g++ -c src/*.c* && g++ -c test/test.cpp && mkdir -p obj && mv *.o obj'
 
 # Tasks
 * C++ Source code
