@@ -46,6 +46,10 @@ g++ customerWallet.o moneyRemittance.o readCSV.o -o a
         - Integration setup
         - unit testing
         - Code Quality
+            Codacy
+            Vlagring
+            Cpp Check
+            
 
 * Linux Develop
     * Makefiles
