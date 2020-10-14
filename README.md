@@ -1,54 +1,14 @@
 
-![C++ cmake Unit test](https://github.com/99002623/Test/workflows/C++%20cmake%20Unit%20test/badge.svg)
+# Money Wallet 
+
+|Unit Testing|
+|:-:|
+|![C++ cmake Unit test](https://github.com/99002623/Mini-Project/workflows/C++%20cmake%20Unit%20test/badge.svg)|
+
+This is MoneyWallet which provides the Money Remittance service to the customers to transfer  or withdraw the funds to Bank account from the Wallet.
 
 
-
-|Codacy|cppcheck|Valgrind|Cmake Build|Build|Unit-Test|
-|:--:|:--:|:--:|:--:|:--:|:--:|
-|||||||
-
-
-
-
-
-# Tasks
-* C++ Source code
-    * Operator Overload
-    * Templates
-    * Code quality check
-    * Git Configurations
-        - project folder
-        - Actions setup
-        - Workflow Setup
-        - Integration setup
-        - unit testing
-        - Code Quality
-            Codacy
-            Vlagring
-            Cpp Check
-            
-
-* Linux Develop
-    * Makefiles
-        - Dynamic Lib
-        - static lib
-        - without lib
-    
-    * IPC - simophore
-
-* Documentation 
-    * UML Diagrams
-
-# Description
-## Topic
-    Wallet based Money Remittance 
-
-## Problem Statement
-
-This is MoneyWallet which provides the Money Remittance service to the customers to transfer  or withdraw the funds to Bank account from the Wallet .
-
-
-# Checklist
+# Project is based on
 
 ## Cpp
 * No.of classes 	
@@ -90,3 +50,32 @@ This is MoneyWallet which provides the Money Remittance service to the customers
 	- IPC Techniques – Mutual Exclusion
 	- IPC Techniques – Data Exchange
 	- File Handling (system level)
+
+## Wishlist
+* C++ Source code
+    * Operator Overload
+    * Templates
+    * Code quality check
+    * Git Configurations
+        - project folder
+        - Actions setup
+        - Workflow Setup
+        - Integration setup
+        - unit testing
+        - Code Quality
+            Codacy
+            Vlagring
+            Cpp Check
+            
+
+* Linux Develop
+    * Makefiles
+        - Dynamic Lib
+        - static lib
+        - without lib
+    
+    * IPC - simophore
+
+* Documentation 
+    * UML Diagrams
+
