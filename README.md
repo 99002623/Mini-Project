@@ -7,10 +7,9 @@
 
 This is MoneyWallet which provides the Money Remittance service to the customers to transfer  or withdraw the funds to Bank account from the Wallet.
 
+## Project Concepts
 
-# Project is based on
-
-## Cpp
+### Cpp
 * No.of classes 	
     - Domain classes 
 	- Utility Classes 
@@ -41,11 +40,11 @@ This is MoneyWallet which provides the Money Remittance service to the customers
     - Assertions
 	- Test Fixtures
 
-## Linux
+### Linux
 * Development Tools	Makefiles
 	- Static Libraries
 	- Dynamic Libraries
-	
+
 * OS Concepts	Threading
 	- IPC Techniques – Mutual Exclusion
 	- IPC Techniques – Data Exchange
@@ -66,16 +65,12 @@ This is MoneyWallet which provides the Money Remittance service to the customers
             Codacy
             Vlagring
             Cpp Check
-            
-
 * Linux Develop
     * Makefiles
         - Dynamic Lib
         - static lib
         - without lib
-    
     * IPC - simophore
-
 * Documentation 
     * UML Diagrams
 
