@@ -1,10 +1,14 @@
 
 ![C++ cmake Unit test](https://github.com/99002623/Test/workflows/C++%20cmake%20Unit%20test/badge.svg)
 
-# Workflow Commads.
 
-## Pre Alias Names
-* Run Procedure
+
+|Codacy|cppcheck|Valgrind|Cmake Build|Build|Unit-Test|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|||||||
+
+
+
 
 
 # Tasks
@@ -47,7 +51,7 @@ This is MoneyWallet which provides the Money Remittance service to the customers
 # Checklist
 
 ## Cpp
-* No.of classes 	d
+* No.of classes 	
     - Domain classes 
 	- Utility Classes 
 	

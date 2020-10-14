@@ -2,7 +2,7 @@ name: C++ cmake Unit test
 
 on:                 #git event that triggers the git flow
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:             #on event trigger job is assigned 
   build:
