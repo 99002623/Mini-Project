@@ -2,8 +2,8 @@
 #include "moneyRem_test.h"
 #include "transTest.h"
 
-#define _cmake_
-//#define _commands_
+//#define _cmake_
+#define _commands_
 
 #ifdef _cmake_          //Dependancies
 

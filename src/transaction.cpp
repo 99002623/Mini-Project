@@ -32,78 +32,40 @@ vector<string> lineData;
     }
 
 file.close();
-
 }//Import end
 
-bool Transaction::sendMoney(std::string number,double amt){
 
-std::list<MoneyRemittance> :: iterator iter;
-bool trFlag = false;
-
-    for(iter=l_mrCust.begin();iter!=l_mrCust.end();iter++)   //Scan Database to find the customer
-    {
-        if(number == iter->getMobileNum())  // Customer found
-        {
-            iter->credit(amt);
-            r_accBal = iter->getAccBalance();
-            r_wBal = iter -> getWalletbal();
-            trFlag = true;
-            break;
+MoneyRemittance* Transaction::findCustomer(string number){
+auto iter = l_mrCust.begin();       // or list<MoneyRemittance> :: iterator iter;
+    while(iter!=l_mrCust.end()){
+        if(number == iter->getMobileNum()){
+            return &(*iter);
         }
-
+        ++iter;
     }
-    return trFlag;
+return nullptr;
+}  
 
-}   // function end
-
-bool Transaction::withdrawMoney(std::string number,double amt){
-
-std::list<MoneyRemittance> :: iterator iter;
-bool trFlag = false;
-
-    for(iter=l_mrCust.begin();iter!=l_mrCust.end();iter++)   //Scan Database to find the customer
-    {
-        if(number == iter->getMobileNum())  // Customer found
-        {
-            iter->debit(amt);
-            r_accBal = iter->getAccBalance();
-            r_wBal = iter -> getWalletbal();
-            trFlag = true;
-        }
-
-    }
-
-    return trFlag;
-
+void Transaction::sendMoney(std::string number,double amt){
+MoneyRemittance* ctr = findCustomer(number);
+ctr->credit(amt);
+r_accBal = ctr->getAccBalance();
+r_wBal = ctr -> getWalletbal();
 }
 
-/*double Transaction::updatedBalance(std::string num){
-std::list<MoneyRemittance> :: iterator iter;
-double t_bal;
-
-    for(iter=l_mrCust.begin();iter!=l_mrCust.end();iter++)   //Scan Database to find the customer
-    {
-        if(num == iter->getMobileNum())  // Customer found
-        {
-           t_bal = iter->getAccBalance();
-           break;
-        }
-
-    }
-return t_bal;
-
-}*/
-
+void Transaction::withdrawMoney(std::string number,double amt){
+MoneyRemittance* ctr = findCustomer(number);
+ctr->debit(amt);
+r_accBal = ctr->getAccBalance();
+r_wBal = ctr -> getWalletbal();
+}
 
 
 void Transaction::showCustomers(){
-
 list<MoneyRemittance>::iterator iter;
-
 cout << "Accout List" << endl ;
-    for(iter = l_mrCust.begin();iter != l_mrCust.end();iter++)
+    for(iter = l_mrCust.begin();iter != l_mrCust.end();++iter)
     {
         cout << iter->getCustomerName() << endl;
     }
-
 }

@@ -28,8 +28,11 @@ void addCustomer(vector<string> data);
 
 void importDataset(string fileName);
 
-bool sendMoney(string,double);    // Customer Number and Amount
-bool withdrawMoney(string,double);
+MoneyRemittance* findCustomer(string);    // return pointer for class for fast
+
+
+void sendMoney(string,double);    // Customer Number and Amount
+void withdrawMoney(string,double);
 
 void showCustomers();
 
