@@ -35,7 +35,7 @@ file.close();
 }//Import end
 
 
-MoneyRemittance* Transaction::findCustomer(string number){
+MoneyRemittance* Transaction::findCustomer(const string &number){
 auto iter = l_mrCust.begin();       // or list<MoneyRemittance> :: iterator iter;
     while(iter!=l_mrCust.end()){
         if(number == iter->getMobileNum()){
@@ -46,14 +46,14 @@ auto iter = l_mrCust.begin();       // or list<MoneyRemittance> :: iterator iter
 return nullptr;
 }  
 
-void Transaction::sendMoney(std::string number,double amt){
+void Transaction::sendMoney(const string &number,double amt){
 MoneyRemittance* ctr = findCustomer(number);
 ctr->credit(amt);
 r_accBal = ctr->getAccBalance();
 r_wBal = ctr -> getWalletbal();
 }
 
-void Transaction::withdrawMoney(std::string number,double amt){
+void Transaction::withdrawMoney(const string &number,double amt){
 MoneyRemittance* ctr = findCustomer(number);
 ctr->debit(amt);
 r_accBal = ctr->getAccBalance();
