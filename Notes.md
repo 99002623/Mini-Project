@@ -7,6 +7,8 @@
     Vlagring
     Cpp Check
 
+https://www.geeksforgeeks.org/overloading-stream-insertion-operators-c/)
+
 # Checklist
 
 ## Cpp
