@@ -45,23 +45,6 @@ w_balance -= amt ;
 }*/
 
 
-//getters
-std:: string customerWallet::  getCustomerName(){
-    return w_custName;
-}
-
-std:: string customerWallet:: getMobileNum(){
-    return w_mobNum;
-}
-
-std:: string customerWallet:: getCustomerID(){
-    return w_custID;
-}
-
-double customerWallet:: getWalletbal(){
-    return w_balance;
-}
-
 /*
 void customerWallet::display(){
     std::cout << "Customer Name :" + w_custName << std::endl;

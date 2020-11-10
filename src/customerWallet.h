@@ -32,10 +32,10 @@ virtual void debit(double)=0;
 
 
 //Getters
-std:: string getCustomerName();
-std:: string getMobileNum();
-std:: string getCustomerID();
-double getWalletbal();
+std:: string getCustomerName(){return w_custName;};
+std:: string getMobileNum(){return w_mobNum;};
+std:: string getCustomerID(){return w_custID;};
+double getWalletbal(){return w_balance;};
 
 //void display();
 
