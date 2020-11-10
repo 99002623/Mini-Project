@@ -8,3 +8,6 @@ This is MoneyWallet which provides the Money Remittance service to the customers
 0. Clean files `make clean`
 1. Unit Testing `make Gtest` 
 
+## File System
+* for debug use CMAKE file
+* for building use make file
