@@ -1,4 +1,4 @@
-Gtest:|
+Gtest:
 	g++ src/*.c* test/test.cpp -o test.out -lgtest -lgtest_main -lpthread
 runGtest: Gtest
 	./test.out
