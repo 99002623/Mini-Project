@@ -16,7 +16,7 @@ public:
 MoneyRemittance();
 
 // Name,Mob,id,Ac,bank,ifsc,bal
-MoneyRemittance(std::string,std::string,std::string,std::string,std::string,std::string,double);
+MoneyRemittance(const string&,std::string,std::string,std::string,std::string,std::string,double);
 
 // Virtual funcions
 void credit(double);   // Account Credit or Wallet Debit

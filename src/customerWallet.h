@@ -2,7 +2,7 @@
 #define _customerWallet_h
 
 #include <string>
-
+using std::string;
 
 class customerWallet{
 
@@ -18,8 +18,8 @@ public:
 
 // Constructer - Default and Parameterized Constructer
 customerWallet();
-customerWallet(std::string,std::string,double);
-customerWallet(std::string,std::string,std::string,double);
+customerWallet(const string&,std::string,double);
+customerWallet(const string&,std::string,std::string,double);
 
 // Operations
 void loadWallet(double);

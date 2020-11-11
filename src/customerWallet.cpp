@@ -9,14 +9,14 @@ w_custID(""),
 w_balance(0)
 {}
 
-customerWallet::customerWallet(std::string name,std::string mobNum,double bal):
+customerWallet::customerWallet(const string &name,string mobNum,double bal):
 w_custName(name),
 w_mobNum(mobNum),
 w_custID(""),
 w_balance(bal)
 {}
 
-customerWallet :: customerWallet(std::string name,std::string mobNum,std::string id,double bal):
+customerWallet :: customerWallet(const string& name,string mobNum,string id,double bal):
 w_custName(name),
 w_mobNum(mobNum),
 w_custID(id),

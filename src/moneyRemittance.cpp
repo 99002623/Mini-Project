@@ -2,7 +2,7 @@
 
 MoneyRemittance::MoneyRemittance():customerWallet(),m_accNum(""),m_bank(""),m_ifscCode(""){}
 
-MoneyRemittance::MoneyRemittance(std::string name,std::string mobNum,std::string id,std::string accNum,std::string bank,std::string ifsc,double acBal):
+MoneyRemittance::MoneyRemittance(const string& name,std::string mobNum,std::string id,std::string accNum,std::string bank,std::string ifsc,double acBal):
 customerWallet(name,mobNum,id,0),m_accNum(accNum),m_bank(bank),m_ifscCode(ifsc),
 m_accBal(acBal){}
 
