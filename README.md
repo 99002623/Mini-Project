@@ -17,7 +17,7 @@ This is MoneyWallet which provides the Money Remittance service to the customers
 * [Cmake File](CmakeLists.txt) used for debugging
 * Source Codes 
     * [Customer Wallet declaration](src/customerWallet.h)
-    * [Customer Wallet definition](src/customerWallet.h)
+    * [Customer Wallet definition](src/customerWallet.cpp)
     * [Money Remittance declaration](src/moneyRemittance.h)
     * [Money Remittance definition](src/moneyRemittance.cpp)
     * [Transactions Declaration](src/transactions.h)
