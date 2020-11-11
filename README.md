@@ -9,5 +9,13 @@ This is MoneyWallet which provides the Money Remittance service to the customers
 1. Unit Testing `make runGtest` 
 
 ## File System
-* for debug use CMAKE file
-* for building use make file
+* [Makefile](Makefile) used for building by shell commands
+* [Cmake File](CmakeLists.txt) used for debugging
+* Source Codes 
+    * [Customer Wallet declaration](src/customerWallet.h)
+    * [Customer Wallet definition](src/customerWallet.h)
+    * [Money Remittance declaration](src/moneyRemittance.h)
+    * [Money Remittance definition](src/moneyRemittance.cpp)
+    * [Transactions Declaration](src/transactions.h)
+    * [Transactions Definition](src/transactions.cpp)
+* [DataSet](bankDatabase.csv)
