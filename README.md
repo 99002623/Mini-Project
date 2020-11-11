@@ -6,7 +6,11 @@ This is MoneyWallet which provides the Money Remittance service to the customers
 
 ## Commands
 0. Clean files `make clean`
-1. Unit Testing `make runGtest` 
+1. Build `make build`
+1. Unit Testing `make runGtest`
+2. static analysis `make cppCheck`
+3. Dynamic Analysis `make valgrind`
+
 
 ## File System
 * [Makefile](Makefile) used for building by shell commands
