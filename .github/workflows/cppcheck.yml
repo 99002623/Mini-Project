@@ -9,4 +9,4 @@ jobs:
       - name: Install cppcheck
         run: sudo apt-get -y install cppcheck
       - name: Cppcheck Source Code
-        run: cppcheck src/*.c*
+        run: make cppCheck
